@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter";
+  background-color: hsl(233, 47%, 7%);
+  /* height: 100vh; */
+  /* overflow: hidden; */
+
+  line-height: 1.5;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: hsl(244, 38%, 16%);
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  margin: 13rem auto;
+  /* padding-bottom: 0; */
+  /* height: 45%; */
+}
+
+.right {
+  padding: 5rem 5rem 0 5rem;
+  /* background-color: green; */
+  /* background-color: red; */
+}
+
+.right h1 {
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.description {
+  font-size: 1.6rem;
+  /* background-color: pink; */
+  color: hsla(0, 0%, 100%, 0.75);
+  max-width: 400px;
+  margin-bottom: 6rem;
+}
+
+.right span {
+  color: hsl(277, 64%, 61%);
+}
+
+.stats {
+  display: flex;
+  /* background-color: green; */
+  justify-content: space-between;
+  max-width: 350px;
+}
+
+.stat {
+  text-transform: uppercase;
+}
+.stat h2 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+  color: white;
+}
+
+.stat p {
+  color: hsl(0, 0%, 100%, 0.6);
+  letter-spacing: 0.1rem;
+}
+
+.left {
+  /* background-color: red; */
+  overflow: hidden;
+}
+
+.image-section {
+  position: relative;
+}
+
+.image {
+  display: block;
+  object-fit: contain;
+}
+
+.image-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(277, 64%, 61%, 0.585);
+  /* opacity: 0.6; */
+}
+
+/* img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+} */
